@@ -17,7 +17,7 @@
     Password :<input type="text" name="Password"><br/>
     Email :<input type="text" name="Email"><br/>
     Date of birth :<input type="text" name="Date of birth"><br/>
-    <input type="submit" value="Send data to server"/>
+    <input type="submit" value="Register"/>
 </form>
 </body>
 </html>
