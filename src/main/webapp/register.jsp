@@ -12,11 +12,12 @@
 </head>
 <body>
 <p>New User Registration</p>
-<form method="get">
+<form method="post"  action="register">
     UserName :<input type="text" name="Username"><br/>
     Password :<input type="text" name="Password"><br/>
     Email :<input type="text" name="Email"><br/>
-    Date of birth :<input type="text" name="Date of birth"><br/>
+    Gender:<input type="radio" name="gender" value="male">Male<input type="radio" name="gender" value="female">Female<br/>
+    Date of birth :<input type="text" name="birthDate"><br/>
     <input type="submit" value="Register"/>
 </form>
 </body>
