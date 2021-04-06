@@ -4,11 +4,25 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class RegisterServlet extends HttpServlet {
+    Connection con = null;
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+
+        String sql = "select * from usertable";
+        try {
+            ResultSet rs = con.createStatement().executeQuery(sql);
+            while (rs.next()) {
+
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
     }
 
     @Override
@@ -28,5 +42,14 @@ public class RegisterServlet extends HttpServlet {
         writer.println("<br>gender :"+gender);
         writer.println("<br>birthDate :"+birthDate);
         writer.close();
+    }
+    @Override
+    public void destroy() {
+        super.destroy();
+        try {
+            con.close();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
     }
 }
