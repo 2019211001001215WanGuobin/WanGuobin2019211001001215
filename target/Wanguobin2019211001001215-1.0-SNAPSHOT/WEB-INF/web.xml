@@ -48,6 +48,24 @@
         <servlet-name>RegisterServlet</servlet-name>
         <servlet-class>com.WanGuobin.week3.demo.RegisterServlet</servlet-class>
     </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.WanGuobin.week5.demo.LoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>HelloWorldServlet</servlet-name>
+        <servlet-class>com.WanGuobin.week2.demo.HelloWorldServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
 
     <servlet-mapping>
         <servlet-name>WanGuobin</servlet-name>
@@ -58,11 +76,8 @@
         <url-pattern>/life</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>RegisterServlet</servlet-name>
-        <url-pattern>/register</url-pattern>
+        <servlet-name>HelloWorldServlet</servlet-name>
+        <url-pattern>/world</url-pattern>
     </servlet-mapping>
+
 </web-app>
-
-
-
-

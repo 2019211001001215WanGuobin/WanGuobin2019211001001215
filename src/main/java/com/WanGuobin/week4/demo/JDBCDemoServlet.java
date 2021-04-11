@@ -29,7 +29,7 @@ public class JDBCDemoServlet extends HttpServlet {
         //String driver="com.microsoft.sqlserver.jdbc.SQLServerDriver";
         //String url="jdbc:sqlserver://localhost:databaseName=userdb;";
         //String username="sa";
-        //String password="123456";
+        //String password="wgb0817..";
 
         ServletConfig Config = getServletConfig();
         String driver = Config.getInitParameter("driver");
