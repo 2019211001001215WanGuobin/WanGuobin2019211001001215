@@ -14,7 +14,7 @@ public class SearchServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=utf-8");
         String txt = URLEncoder.encode(request.getParameter("txt"),"utf-8");
-//        System.out.println(txt);
+
         String search = request.getParameter("search");
         System.out.println(search);
         if(txt.equals("") || txt == null){

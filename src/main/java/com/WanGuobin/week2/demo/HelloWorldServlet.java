@@ -5,15 +5,22 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Date;
 
 public class HelloWorldServlet extends HttpServlet {
-    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        PrintWriter writer = response.getWriter();
-        writer.println("Name:Wan Guobin");
-        writer.println("ID:2019211001001215");
-        writer.println("Time:2021/3/14");
 
+    String name="Wan Guobin";
+    String id="2019211001001215";
+    public void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws IOException {
+        PrintWriter writer = response.getWriter();
+
+        Date date=new Date();
+        writer.println("Name: "+name);
+        writer.println("Id: "+id);
+        writer.println("Date and Time: "+date.toString());
     }
+
     public void doPost(HttpServletRequest request, HttpServletResponse response){
 
     }

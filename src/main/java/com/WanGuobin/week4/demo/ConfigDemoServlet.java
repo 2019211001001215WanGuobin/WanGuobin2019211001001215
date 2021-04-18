@@ -9,22 +9,12 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.Writer;
-
-
-@WebServlet(name="ConfigDemoServlet",urlPatterns="/jdbc",initParams={
-        @WebInitParam(name="name",value="WanGuobin"),
-        @WebInitParam(name="studentid",value="2019211001001215")
-})
+@WebServlet(value = "/config",initParams = {@WebInitParam(name = "name",value = "WanGuobin"),@WebInitParam(name = "studentId",value = "2019211001001215")})
 public class ConfigDemoServlet extends HttpServlet {
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-        doPost(request,response);
-    }
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        PrintWriter writer=response.getWriter();
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        PrintWriter writer=resp.getWriter();
         writer.println("name:"+getServletConfig().getInitParameter("name"));
-        writer.println("studentid:"+getServletConfig().getInitParameter("studentid"));
+        writer.println("studentId"+getServletConfig().getInitParameter("studentId"));
     }
 }
