@@ -12,25 +12,15 @@ import java.io.PrintWriter;
 import java.sql.*;
 
 @WebServlet(name = "LoginServlet", value = "/login")
-public class LoginServlet extends HttpServlet {
-    Connection con = null;
-    @Override
-    public void init() throws ServletException {
-        String driver="com.microsoft.sqlserver.jdbc.SQLServerDriver";
-        String url="jdbc:sqlserver://localhost:1433;DatabaseName=userdb;";
-        String username="sa";
-        String password="wgb0817..";
 
+    public class LoginServlet extends HttpServlet {
+        Connection con=null;
+        public void init() throws ServletException {
+            super.init();
 
-
-        try {
-            Class.forName(driver);
-            con= DriverManager.getConnection(url,username,password);
-            System.out.println("init()-->"+con);
-        } catch (ClassNotFoundException | SQLException e) {
-            e.printStackTrace();
-            System.out.println("1连接数据库失败！");
+            con=(Connection)getServletContext().getAttribute("con");
         }
+
 
 //    public Connection dbConn;
 //    public void init() {
@@ -40,7 +30,7 @@ public class LoginServlet extends HttpServlet {
 //            System.out.println(e); }
        // con =(Connection)getServletContext().getAttribute("dbConn");
 //        System.out.println(con);
-    }
+
 
 
     @Override
