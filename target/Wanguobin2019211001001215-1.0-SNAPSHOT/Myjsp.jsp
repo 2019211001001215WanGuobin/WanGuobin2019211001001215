@@ -7,5 +7,5 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="header.jsp"%>
-tested jsp
+This is my JSP page.
 <%@include file="footer.jsp"%>

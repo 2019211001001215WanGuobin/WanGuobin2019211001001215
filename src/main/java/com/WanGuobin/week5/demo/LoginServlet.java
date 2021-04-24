@@ -48,7 +48,36 @@ import java.sql.*;
         try {
             User user=userDao.findByUsernamePassword(con,username, password);
             if(user!=null){
-                request.setAttribute("user",user);
+                //week 8
+                // Cookie c=new Cookie(name:"sessionID"),value:""+user.getID());
+                //c.setMaxAge(10*60);
+                //response.addCookie(c);
+
+
+
+                String rememberMe=request.getParameter("rememberMe");
+                if (rememberMe!=null &&rememberMe.equals("1"))
+                {
+                    Cookie usernameCookie = new Cookie("cUsername",user.getUsername());
+                    Cookie passwordCookie= new Cookie("cPassword",user.getPassword());
+                    Cookie rememberMeCookie = new Cookie("cRememberMe",request.getParameter("rememberMe"));
+                    usernameCookie.setMaxAge(10);
+                    passwordCookie.setMaxAge(10);
+                    rememberMeCookie.setMaxAge(10);
+                    response.addCookie(usernameCookie);
+                    response.addCookie(passwordCookie);
+                    response.addCookie(rememberMeCookie);
+
+                }
+
+
+                HttpSession session=   request.getSession();
+                System.out.println("session id-->"+session.getId());
+                session.setMaxInactiveInterval(10);
+
+
+                session.setAttribute("user",user);
+                //request.setAttribute("user",user);
                 request.getRequestDispatcher("WEB-INF/views/userInfo.jsp").forward(request,response);
             }else{
                 request.setAttribute("msg","Username or password Error!!!");

@@ -27,7 +27,7 @@
             let atpos=x.indexOf("@");
             let dotpos=x.lastIndexOf(".");
             if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length){
-                alert("e-mail format wrong");
+                alert("e-mail  wrong");
                 document.getElementById("email").style.color="red";
                 return false;
             }
