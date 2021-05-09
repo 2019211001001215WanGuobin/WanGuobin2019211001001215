@@ -43,7 +43,7 @@ public class RegisterServlet extends HttpServlet {
 //        writer.println("<br>gender:"+sex);
 //        writer.println("<br>birthDate:"+birth);
         String[][] ret=new String[100][6];
-        int cnt=0;
+       int cnt=0;
         try {
             Statement createDbStatement = dbConn.createStatement();
             String dbRequire1="insert into usertable(username,password,email,gender,birthdate) values('"+username+"','"+password+"','"+email+"','"+gender+"','"+birth+"')";
