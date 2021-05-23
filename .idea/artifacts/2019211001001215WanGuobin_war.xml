@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="2019211001001215WanGuobin:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>2019211001001215WanGuobin</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="Wanguobin2019211001001215-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="2019211001001215WanGuobin:war exploded" />
+    </root>
+  </artifact>
+</component>
