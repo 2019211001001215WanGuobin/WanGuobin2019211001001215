@@ -35,7 +35,7 @@ import java.sql.*;
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("WEB-INF/views/Login.jsp").forward(request,response);
+        request.getRequestDispatcher("WEB-INF/views/login.jsp").forward(request,response);
     }
     @Override
 
@@ -81,7 +81,7 @@ import java.sql.*;
                 request.getRequestDispatcher("WEB-INF/views/userInfo.jsp").forward(request,response);
             }else{
                 request.setAttribute("msg","Username or password Error!!!");
-                request.getRequestDispatcher("WEB-INF/views/Login.jsp").forward(request,response);
+                request.getRequestDispatcher("WEB-INF/views/login.jsp").forward(request,response);
             }
         } catch (SQLException throwables) {
             throwables.printStackTrace();
