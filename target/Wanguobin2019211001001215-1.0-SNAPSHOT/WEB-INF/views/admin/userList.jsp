@@ -1,4 +1,6 @@
 <%@include file="../header.jsp" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql" %>
 
 <section id="z`z`">
 		<div class="container">
@@ -35,33 +37,41 @@
 					</thead>
 					<tbody>
 					<!-- loop_start -->
-					
+					<sql:setDataSource var="myDS"
+									   driver="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+									   url="jdbc:sqlserver://localhost:1433;DatabaseName=userjmy"
+									   user="sa"
+									   password="wgb0817.."/>
+					<sql:query var="allUser" dataSource="${myDS}">
+						select * from usertable;
+					</sql:query>
+					<c:forEach var="row" items="${allUser.rows}">
 						<tr>
 							<td class="cart_description">
-								<p>username</p>
-							</td>
-								<td class="cart_description">
-								<p>password</p>
+								<p>${row.name}</p>
 							</td>
 							<td class="cart_description">
-								<p>email </p>
+								<p>${row.password}</p>
 							</td>
 							<td class="cart_description">
-							<p>gender </p>
+								<p>${row.email} </p>
 							</td>
 							<td class="cart_description">
-								<p >birthDate</p>
+								<p>${row.gender} </p>
 							</td>
-							
+							<td class="cart_description">
+								<p >${row.birthdate}</p>
+							</td>
+
 							<td class="cart_delete">
-							   <a class="cart_quantity_update" href="<%=basePath %>admin/userEdit?userId=id" ><i class="fa fa-edit"></i></a>
-								<a class="cart_quantity_delete" href="<%=basePath%>admin/userDelete?userId=id" ><i class="fa fa-times"></i></a>
+								<a class="cart_quantity_update" href="<%=basePath %>admin/userEdit?userId=${row.id}" ><i class="fa fa-edit"></i></a>
+								<a class="cart_quantity_delete" href="<%=basePath%>admin/userDelete?userId=${row.id}" ><i class="fa fa-times"></i></a>
 							</td>
 						</tr>
-
-						<!-- loop_end -->
-		</tbody>
-		</table>
+					</c:forEach>
+					<!-- loop_end -->
+					</tbody>
+				</table>
 		<ul class="pagination">
 		
 		<li><a href="">&laquo;</a></li>
