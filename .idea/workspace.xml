@@ -9,24 +9,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c3f106b-3426-4311-8006-b516825b1e0f" name="Default Changelist" comment="HW week11 Commit">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/2019211001001215WanGuobin_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/2019211001001215WanGuobin_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2019211001001215WanGuobin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/2019211001001215WanGuobin.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/WanGuobin/controller/AddProductServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/WanGuobin/controller/AddProductServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/WanGuobin/controller/ProductListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/WanGuobin/controller/ProductListServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/WanGuobin/dao/IProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/WanGuobin/dao/IProductDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/WanGuobin/dao/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/WanGuobin/dao/ProductDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/WanGuobin/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/WanGuobin/model/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/productList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/productList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/productDetails.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/productDetails.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/shop.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/shop.jsp" afterDir="false" />
+    <list default="true" id="7c3f106b-3426-4311-8006-b516825b1e0f" name="Default Changelist" comment="HW week12 Commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab1/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab1/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lab1/assignment1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lab1/assignment2/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lab1/assignment2/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lab1/assignment2/validate.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lab1/assignment2/welcome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/WanGuobin/controller/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/WanGuobin/controller/LogoutServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/WanGuobin/week5/demo/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/WanGuobin/week5/demo/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/userList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/userList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cart.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -58,7 +64,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -72,15 +78,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\software\2019211001001215-WanGuobin\src\main\webapp\WEB-INF\views" />
-      <recent name="D:\software\2019211001001215-WanGuobin\src\main\webapp\images\cart" />
-      <recent name="D:\software\2019211001001215-WanGuobin\src\main\java\com\WanGuobin\controller" />
       <recent name="D:\software\2019211001001215-WanGuobin\src\main\webapp" />
-      <recent name="D:\software\2019211001001215-WanGuobin\src\main\java\com\WanGuobin" />
+      <recent name="D:\software\2019211001001215-WanGuobin\src\main\java\com" />
+      <recent name="D:\software\2019211001001215-WanGuobin\src\main\webapp\lab1" />
+      <recent name="D:\software\2019211001001215-WanGuobin\src\main\webapp\lab1\assignment2" />
+      <recent name="D:\software\2019211001001215-WanGuobin\src\main\webapp\WEB-INF\views" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.WanGuobin.controller" />
       <recent name="com.WanGuobin.model" />
+      <recent name="com.WanGuobin.controller" />
       <recent name="com.WanGuobin.dao" />
       <recent name="com.WanGuobin.week6.demo" />
       <recent name="com.WanGuobin.week5.demo" />
@@ -215,6 +221,14 @@
       <workItem from="1621145711916" duration="5898000" />
       <workItem from="1621172345009" duration="720000" />
       <workItem from="1621776071578" duration="5807000" />
+      <workItem from="1621782737970" duration="870000" />
+      <workItem from="1622380421737" duration="480000" />
+      <workItem from="1622380953466" duration="3103000" />
+      <workItem from="1622726781829" duration="2431000" />
+      <workItem from="1622765171185" duration="371000" />
+      <workItem from="1622765589507" duration="933000" />
+      <workItem from="1622766873073" duration="2228000" />
+      <workItem from="1622769340206" duration="564000" />
     </task>
     <task id="LOCAL-00001" summary="HW week11 Commit">
       <created>1621172382184</created>
@@ -223,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621172382184</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="HW week12 Commit">
+      <created>1621782785643</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1621782785643</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,6 +264,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="HW week11 Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="HW week11 Commit" />
+    <MESSAGE value="HW week12 Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW week12 Commit" />
   </component>
 </project>
