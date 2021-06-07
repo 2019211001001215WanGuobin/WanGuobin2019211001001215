@@ -30,9 +30,7 @@
         <param-name>password</param-name>
         <param-value>wgb0817..</param-value>
     </context-param>
-    <welcome-file-list>
-        <welcome-file>home</welcome-file>
-    </welcome-file-list>
+
 
     <filter>
         <filter-name>AuthFilter</filter-name>
@@ -61,4 +59,12 @@
         <url-pattern>/hello</url-pattern>
     </filter-mapping>
 
+    <filter>
+        <filter-name>WanguobinFilter</filter-name>
+        <filter-class>com.lab2.WanguobinFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>WanguobinFilter</filter-name>
+        <url-pattern>/lab2/welcome.jsp</url-pattern>
+    </filter-mapping>
 </web-app>
