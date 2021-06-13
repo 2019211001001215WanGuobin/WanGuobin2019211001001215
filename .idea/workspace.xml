@@ -10,17 +10,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c3f106b-3426-4311-8006-b516825b1e0f" name="Default Changelist" comment="HW week12 Commit">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/WanGuobin/controller/AdminOrderListServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/WanGuobin/controller/OrderDetailsServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/WanGuobin/controller/OrderServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/WanGuobin/dao/IOrderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/WanGuobin/dao/OrderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/WanGuobin/model/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/WanGuobin/model/Payment.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/lab1/Dog.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/lab1/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab2/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab2/LoginFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab2/WanguobinFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/accountDetails.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/orderList.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/contactUs.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/order.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/orderSuccess.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/updateUserView.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/webapp/lab1/assignment1.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/webapp/lab1/assignment2/img.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/webapp/lab1/assignment2/login.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/webapp/lab1/assignment2/validate.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/webapp/lab1/assignment2/welcome.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lab2/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lab2/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lab2/validate.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lab2/welcome.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/orderDetails.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/2019211001001215WanGuobin_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/2019211001001215WanGuobin_war.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/WanGuobin/controller/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/WanGuobin/controller/LogoutServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/WanGuobin/week5/demo/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/WanGuobin/week5/demo/LoginServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/userList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/userList.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +88,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -74,19 +98,22 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\software\2019211001001215-WanGuobin\src\main\webapp" />
-      <recent name="D:\software\2019211001001215-WanGuobin\src\main\java\com" />
-      <recent name="D:\software\2019211001001215-WanGuobin\src\main\webapp\lab1" />
-      <recent name="D:\software\2019211001001215-WanGuobin\src\main\webapp\lab1\assignment2" />
       <recent name="D:\software\2019211001001215-WanGuobin\src\main\webapp\WEB-INF\views" />
+      <recent name="D:\software\2019211001001215-WanGuobin\src\main\webapp\WEB-INF\views\admin" />
+      <recent name="D:\software\2019211001001215-WanGuobin\src\main\java\com" />
+      <recent name="D:\software\2019211001001215-WanGuobin\src\main\webapp" />
+      <recent name="D:\software\2019211001001215-WanGuobin\src\main\java\com\WanGuobin\controller" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.WanGuobin.dao" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.WanGuobin.model" />
       <recent name="com.WanGuobin.controller" />
+      <recent name="com.WanGuobin.model" />
       <recent name="com.WanGuobin.dao" />
       <recent name="com.WanGuobin.week6.demo" />
       <recent name="com.WanGuobin.week5.demo" />
@@ -228,7 +255,11 @@
       <workItem from="1622765171185" duration="371000" />
       <workItem from="1622765589507" duration="933000" />
       <workItem from="1622766873073" duration="2228000" />
-      <workItem from="1622769340206" duration="564000" />
+      <workItem from="1622769340206" duration="2748000" />
+      <workItem from="1622980985683" duration="11778000" />
+      <workItem from="1623054522546" duration="3766000" />
+      <workItem from="1623587511815" duration="1752000" />
+      <workItem from="1623592604387" duration="309000" />
     </task>
     <task id="LOCAL-00001" summary="HW week11 Commit">
       <created>1621172382184</created>
@@ -266,5 +297,9 @@
     <MESSAGE value="HW week11 Commit" />
     <MESSAGE value="HW week12 Commit" />
     <option name="LAST_COMMIT_MESSAGE" value="HW week12 Commit" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
